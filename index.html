@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Vídeo Analítico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Player de Vídeo Interativo e Analítico</h1>
+
+    <div id="player-container">
+        <video id="meuVideo" src="assets/video.mp4"></video>
+        
+        <div id="waveform"></div>
+
+        <div id="timeline-container">
+            <div id="marcadores-aqui"></div>
+        </div>
+
+        <div class="controles">
+            <button id="playBtn">Play/Pause</button>
+        </div>
+    </div>
+
+    <div id="transcricao-container">
+        <h2>Transcrição</h2>
+        <div id="transcricao"></div>
+    </div>
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="assets/transcricao.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

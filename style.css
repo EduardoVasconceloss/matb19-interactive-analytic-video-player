@@ -1,0 +1,52 @@
+body { font-family: sans-serif; background-color: #f0f0f0; }
+#player-container { max-width: 800px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 8px; }
+#meuVideo { width: 100%; }
+#waveform { margin-top: 15px; }
+.controles { margin-top: 10px; }
+#transcricao-container { max-width: 800px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 8px; }
+#transcricao p {
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#transcricao p:hover {
+    background-color: #e9d5ff; /* Cor roxa clara */
+}
+
+#transcricao p.highlight {
+    background-color: #c084fc; /* Cor roxa */
+    color: white;
+}
+/* style.css (continuação) */
+#timeline-container {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    margin-top: 15px;
+}
+
+.marcador {
+    position: absolute;
+    width: 2px;
+    height: 15px; /* Mais alto que a barra */
+    background-color: #ef4444; /* Vermelho */
+    top: -2.5px;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+.marcador:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+}
